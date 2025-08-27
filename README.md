@@ -126,8 +126,8 @@ Some EC features could be:
 ## Tips, Tricks, and Helpful Resources
 
 **We will be holding workshops and office hours to help you out. The following are the dates for these workshops :**
-1. **Workshop (project overview, Git, and backend):** September 4th, 7:00 PM in FGH 110
-2. **Office Hours:** TBA
+1. **Workshop (project overview, Git, and backend):** September 4th, 6:00 PM in FGH 110
+2. **Office Hours:** September 10th, 5:00 PM in FGH 110 & September 11th, 6:00 PM in FGH 136
 
 **If you have any general questions or want advice on how to get started/learn something, please email both Leo Zhang & Helen Wu at leo.t.zhang@vanderbilt.edu & helen.wu@vanderbilt.edu (in one email) **
 

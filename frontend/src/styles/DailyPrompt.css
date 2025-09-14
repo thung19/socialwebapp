@@ -1,0 +1,40 @@
+/* Daily prompt container */
+.daily-prompt {
+    background: lightblue;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Prompt question text */
+.prompt-question {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: darkblue;
+}
+
+/* Actions when not answered */
+.prompt-actions p {
+    margin: 10px 0;
+    color: gray;
+}
+
+/* Mark as answered button */
+.answered-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Text when already answered */
+.answered-text {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}

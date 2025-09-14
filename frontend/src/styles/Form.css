@@ -1,0 +1,51 @@
+/* Overall form container */
+.form-container {
+  /* Use flexbox to center content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Add spacing and visual style */
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields inside the form (e.g., text, password) */
+.form-input {
+  /* Size and spacing */
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+
+  /* Borders and box model */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+.form-button {
+  /* Size and spacing */
+  width: 95%;
+  padding: 10px;
+  margin: 20px 0;
+
+  /* Colors and appearance */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+
+  /* Interaction effects */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for the submit button */
+.form-button:hover {
+  background-color: #0056b3;
+}

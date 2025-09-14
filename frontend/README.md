@@ -23,7 +23,7 @@
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+### 1. Clone the Repository and Create Virtual Environment
 ```
 git clone <repository-url>
 cd <repository-name>
@@ -31,6 +31,8 @@ cd <repository-name>
 ### 2. Backend Setup
 ```
 cd backend
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate

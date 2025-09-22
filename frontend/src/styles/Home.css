@@ -1,76 +1,76 @@
 /* Main container: centers the entire feed and limits width */
 .feed-container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 500px;        /* Limit the feed’s width to 500px for readability */
+  margin: 0 auto;          /* Center horizontally: 0 top/bottom, auto left/right */
+  padding: 20px;           /* Space inside the container */
 }
 
 /* Page header: holds the title and logout button side by side */
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  display: flex;           /* Use flexbox to arrange children in a row */
+  justify-content: space-between; /* Push title to left, logout button to right */
+  align-items: center;     /* Vertically center header content */
+  margin-bottom: 20px;     /* Space below the header */
 }
 
 /* Logout button styling */
 .logout-btn {
-  background: red;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
+  background: red;         /* Red background for emphasis */
+  color: white;            /* White text for contrast */
+  padding: 8px 16px;       /* Vertical & horizontal padding */
+  text-decoration: none;   /* Remove default underline on links */
+  border-radius: 4px;      /* Slightly rounded corners */
 }
 
 /* Floating "+" button for adding a new note */
 .add-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background: blue;
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
+  position: fixed;         /* Fix button position relative to the viewport */
+  bottom: 20px;            /* 20px above the bottom edge */
+  right: 20px;             /* 20px away from the right edge */
+  width: 60px;             /* Circular width */
+  height: 60px;            /* Circular height */
+  background: blue;        /* Blue background to stand out */
+  color: white;            /* White “+” icon/text */
+  border-radius: 50%;      /* Make it perfectly circular */
+  text-decoration: none;   /* Remove link underline */
+  display: flex;           /* Use flexbox to center the “+” horizontally & vertically */
+  align-items: center;     /* Vertical centering inside the circle */
+  justify-content: center; /* Horizontal centering inside the circle */
+  font-size: 24px;         /* Large “+” symbol */
 }
 
 /* Container for the form used to create a new note */
 .note-form {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+  background: white;       /* White card background */
+  border: 1px solid #ccc;  /* Light gray border outline */
+  border-radius: 8px;      /* Rounded corners for a card look */
+  padding: 20px;           /* Inner padding for breathing room */
+  margin-bottom: 20px;     /* Space below the form */
 }
 
 /* Shared styles for text input fields and textareas inside the form */
 .form-input,
 .form-textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  width: 100%;             /* Fill the width of the form */
+  padding: 10px;           /* Inner space for text */
+  margin: 10px 0;          /* Vertical spacing between fields */
+  border: 1px solid #ccc;  /* Light gray border */
+  border-radius: 4px;      /* Slight rounding on corners */
+  box-sizing: border-box;  /* Include padding/border inside the 100% width */
 }
 
 /* Additional rules specifically for the textarea */
 .form-textarea {
-  min-height: 80px;
-  resize: vertical;
+  min-height: 80px;        /* Ensure textarea is at least 80px tall */
+  resize: vertical;        /* Allow users to resize height but not width */
 }
 
 /* Submit button styling for creating a new note */
 .submit-btn {
-  background: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  background: blue;        /* Blue background to match brand/accent color */
+  color: white;            /* White text for contrast */
+  padding: 10px 20px;      /* Vertical and horizontal padding */
+  border: none;            /* Remove default border */
+  border-radius: 4px;      /* Rounded corners for a modern look */
+  cursor: pointer;         /* Show a hand pointer on hover */
 }

@@ -1,123 +1,123 @@
 /* Container for each note card */
 .note-card {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 15px;
+  background: white;             /* White card background for contrast */
+  border: 1px solid #ccc;        /* Light gray outline */
+  border-radius: 8px;            /* Rounded corners for a modern card look */
+  padding: 20px;                 /* Inner spacing so text isn’t flush to edges */
+  margin-bottom: 15px;           /* Space below each card to separate notes */
 }
 
 /* Title text inside a note */
 .note-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 0 10px 0;
+  font-size: 18px;               /* Larger font for note titles */
+  font-weight: bold;             /* Bold to emphasize the heading */
+  margin: 0 0 10px 0;            /* Remove top margin; 10px space below */
 }
 
 /* Main content text inside a note */
 .note-content {
-  margin: 0 0 15px 0;
-  line-height: 1.5;
+  margin: 0 0 15px 0;            /* Space below content for separation */
+  line-height: 1.5;              /* Comfortable line spacing for readability */
 }
 
 /* Author name and creation date row */
 .note-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 15px;
+  display: flex;                 /* Use flexbox for side-by-side layout */
+  justify-content: space-between;/* Author on left, date on right */
+  font-size: 12px;               /* Smaller text for metadata */
+  color: #666;                   /* Muted gray color */
+  margin-bottom: 15px;           /* Space before action buttons or comments */
 }
 
 /* Container holding action buttons like Like and Delete */
 .note-actions {
-  display: flex;
-  gap: 10px;
+  display: flex;                 /* Align action buttons in a row */
+  gap: 10px;                     /* 10px spacing between buttons */
 }
 
 /* Default style for the Like button */
 .like-btn {
-  background: transparent;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
+  background: transparent;       /* No fill when not liked */
+  border: 1px solid #ccc;        /* Light border to define shape */
+  padding: 5px 10px;             /* Button padding for clickable area */
+  border-radius: 4px;            /* Slightly rounded corners */
+  cursor: pointer;               /* Pointer cursor on hover */
 }
 
 /* Style when a note is already liked */
 .like-btn.liked {
-  background: pink;
-  border-color: red;
+  background: pink;              /* Pink background to show “liked” state */
+  border-color: red;             /* Red border for stronger emphasis */
 }
 
 /* Delete button for removing a note */
 .delete-btn {
-  background: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
+  background: red;               /* Strong red to indicate danger action */
+  color: white;                  /* White text for contrast */
+  border: none;                  /* Remove default button border */
+  padding: 5px 10px;             /* Comfortable clickable area */
+  border-radius: 4px;            /* Rounded corners */
+  cursor: pointer;               /* Pointer on hover */
 }
 
 /* Container for comments below each note */
 .comments-section {
-  margin-top: 15px;
-  border-top: 1px solid #eee;
-  padding-top: 15px;
+  margin-top: 15px;              /* Space above the comments block */
+  border-top: 1px solid #eee;    /* Subtle divider line */
+  padding-top: 15px;             /* Padding inside the top of section */
 }
 
 /* Layout for the add-comment form */
 .comment-form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  display: flex;                 /* Align input and button side by side */
+  gap: 10px;                     /* Horizontal spacing between them */
+  margin-bottom: 15px;           /* Space below the form before comment list */
 }
 
 /* Text input for new comments */
 .comment-input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  flex: 1;                       /* Expand to fill remaining row width */
+  padding: 8px;                  /* Inner padding for readability */
+  border: 1px solid #ccc;        /* Light border */
+  border-radius: 4px;            /* Rounded corners */
 }
 
 /* Submit button for adding a comment */
 .comment-submit {
-  background: blue;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
+  background: blue;              /* Primary action color */
+  color: white;                  /* White text for contrast */
+  border: none;                  /* Remove default border */
+  padding: 8px 16px;             /* Comfortable click area */
+  border-radius: 4px;            /* Rounded corners */
+  cursor: pointer;               /* Pointer on hover */
 }
 
 /* Single comment item container */
 .comment-item {
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  padding: 10px 0;               /* Vertical spacing inside each comment */
+  border-bottom: 1px solid #eee; /* Light divider between comments */
 }
 
 /* Header of each comment (author, date, delete button) */
 .comment-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  margin-bottom: 5px;
+  display: flex;                 /* Place author/date/delete in a row */
+  justify-content: space-between;/* Spread items across available width */
+  font-size: 12px;               /* Smaller, metadata-like text */
+  margin-bottom: 5px;            /* Space below header before comment body */
 }
 
 /* Author name inside comment */
 .comment-author {
-  font-weight: bold;
+  font-weight: bold;             /* Highlight the commenter’s name */
 }
 
 /* Delete button for individual comments */
 .delete-comment-btn {
-  background: red;
-  color: white;
-  border: none;
-  padding: 2px 6px;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 12px;
+  background: red;               /* Red to signal destructive action */
+  color: white;                  /* White text for contrast */
+  border: none;                  /* Remove default border */
+  padding: 2px 6px;              /* Compact size to fit within header row */
+  border-radius: 2px;            /* Slight rounding for small button */
+  cursor: pointer;               /* Pointer on hover */
+  font-size: 12px;               /* Match the metadata size */
 }

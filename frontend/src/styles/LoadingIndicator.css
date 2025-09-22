@@ -1,29 +1,32 @@
 /* Container for the loading spinner: centers it horizontally and vertically */
 .loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  display: flex;            /* Activate flexbox for easy centering */
+  justify-content: center;  /* Center child horizontally */
+  align-items: center;      /* Center child vertically */
+  padding: 20px;            /* Optional space around the spinner */
 }
 
 /* Circular spinner element */
 .loader {
-  width: 20px;
-  height: 20px;
+  width: 20px;              /* Overall width of the spinner circle */
+  height: 20px;             /* Overall height of the spinner circle */
 
-  /* Light gray background ring with a colored top border for the spinning effect */
-  border: 2px solid #f3f3f3;
-  border-top: 2px solid #3498db;
+  /* Light gray circular ring with a colored top border to show movement */
+  border: 2px solid #f3f3f3;    /* Base ring in light gray */
+  border-top: 2px solid #3498db;/* Top segment in blue—visible while spinning */
 
-  /* Make the element a perfect circle */
-  border-radius: 50%;
+  border-radius: 50%;       /* Perfectly round shape */
 
-  /* Continuous rotation animation */
+  /* Apply a smooth, infinite spin */
   animation: spin 1s linear infinite;
+  /*  - spin: use the keyframes defined below
+      - 1s: one full rotation every second
+      - linear: constant speed
+      - infinite: loop forever */
 }
 
-/* Keyframes for the spinning animation: rotate full circle */
+/* Keyframes that define the spinning motion */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0%   { transform: rotate(0deg); }     /* starting position */
+  100% { transform: rotate(360deg); }   /* full clockwise rotation */
 }
